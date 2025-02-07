@@ -18,6 +18,6 @@
 // const farangate = (kelvin - 273.15 ) * 1.8 + 32;
 // console.log(farangate); 
 
-let value = 15;
-value += 20;
-console.log(value.p);
+// let value = 15;
+// value += 20;
+// console.log(value);
