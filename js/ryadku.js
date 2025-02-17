@@ -4,8 +4,9 @@
 // console.log(messageLength);
 // const firstLetterMessage = message[0];
 // console.log(firstLetterMessage);
-// const lastLetterMessage = message[messageLength -4];
+// const lastLetterMessage = message[messageLength.length -4];
 // console.log(lastLetterMessage);
+
 
 // const age = 12;
 // const message = "My age is";
@@ -41,3 +42,4 @@
 
 // === сувора рівність 
 // == сувора не рівність
+
