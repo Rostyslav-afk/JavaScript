@@ -31,3 +31,106 @@
 // const whatNumber = Number(prompt("Введіть число"));
 // const result = (whatNumber > 1) ? `Так ${whatNumber} більше за один`: `Ні число ${whatNumber} не більше за один`;
 // console.log(result);
+
+// let a = 5;
+// if (true){
+//    a = 10;
+//   if (true){
+//     let a = 25; 
+//     console.log(a);
+//   } 
+// } 
+// console.log(a);
+
+// let cost;
+// const subcription = "premium";
+// switch(subcription){
+//     case "free":
+//         cost = 0;
+//         break;
+//     case "pro":
+//         cost = 100;    
+//         break;
+//     case "premium":
+//         cost = 500;
+//         break;
+//     default:
+//         alert("Invalid subcription type")    
+// }
+// console.log(cost);
+
+
+// 2. Напиши скрипт вибору готеля по кількості зірок (1 — 20$, 2 — 30$, 3 — 50$, 4 — 70$, 5 — 120$). Якщо в змінній stars щось окрім чисел 1-5, виведи рядок: 'Токої кількості зірок немає'.
+// const stars = Number(prompt("Скільки зірковий номер ви бажаєте?"));
+// // if (stars === 1) {
+// //     alert("До оплати 20$")
+// // } else if (stars === 2) {
+// //     alert("До оплати 30$")
+// // } else if (stars === 3) {
+// //     alert("До оплати 50$")
+// // } else if (stars === 4) {
+// //     alert("До оплати 70$")
+// // } else if (stars === 5) {
+// //     alert("До оплати 120$")
+// // } else{
+// //     alert("Такої кількості зірок немає")
+// // }
+
+// switch (stars) {
+//     case 1:
+//         alert("До оплати 20$")
+//         break;
+//     case 2:
+//         alert("До оплати 30$")
+//         break;
+//     case 3:
+//         alert("До оплати 50$")
+//         break;
+//     case 4:
+//         alert("До оплати 70$")
+//         break;
+//     case 5:
+//         alert("До оплати 120$")
+//         break;
+//     default:
+//         alert("Такої кількості зірок немає")
+// }
+// 1. Напиши скрипт вибору опції доставки товару. Опція зберігається в змінній option: 1 - самовивіз, 2 - кур"єр, 3 - пошта. В змінну message записати повідомлення в залежності від опції:
+// 'Ви зможете забрати товар завтра з 12:00 в нашому офісі'
+// 'Кур"єр доставить замовлення завтра з 9:00 до 18:00'
+// 'Посилка буде відправлена сьогодні'
+// 'Вам передзвонить менеджер'.
+// const message = Number(prompt("Виберіть тип доставки (1-3)"));
+// switch (message) {
+//     case 1:
+//         alert("Ви зможете забрати товар завтра з 12:00 в нашому офісі")
+//         break;
+//     case 2:
+//         alert("Кур'єр доставить замовлення завтра з 9:00 до 18:00")
+//         break;
+//     case 3:
+//         alert("Посилка буде відправлена сьогодні")
+//         break;
+//     default:
+//         alert("Вам передзвонить менеджер")
+// }
+
+// Змінна lang може приймати 4 значення: 'ua', 'en', 'es', 'fr'. За допомогою конструкції switch виведи на екран назву місяця в залежності від обраної мови. Наприклад, якщо lang = 'fr', то в консоль виводимо "Janvier".
+
+const lang = prompt("Change your laungage ('ua', 'en', 'es', 'fr') ");
+switch (lang) {
+    case "ua":
+        alert("Ваша мова змінена на Українську!")
+        break;
+    case "en":
+            alert("Your launguage have changed to English!")
+            break;    
+    case "es":
+        alert("¡Tu idioma cambio al Español!")        
+        break;   
+    case "fr":
+        alert("Votre langue a été changée en Frances!")        
+        break; 
+    default:
+        alert("Please select launguage!")      
+}
