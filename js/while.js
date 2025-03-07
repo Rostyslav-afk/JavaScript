@@ -39,9 +39,10 @@
     
 // }
 
- for (let i = 2; i <= 20; i += 2) {
-     if (i % 2 !== 0) {
-        continue;
-     }
-    console.log(i);  
- }
+//  for (let i = 2; i <= 20; i += 2) {
+//      if (i % 2 === 1) {
+//         continue;
+//      }
+//     console.log(i);  
+//  }
+
