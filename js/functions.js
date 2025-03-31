@@ -1,3 +1,4 @@
+"use st"
 // // Function declaration 
 // // function add() {
 // //     // Тіло функції
@@ -33,8 +34,33 @@
 // userPerson()
 
 
-function convertedText (text) {
-    console.log(text.toUpperCase());
-    return text.toUpperCase()
+// function convertedText (text) {
+//     console.log(text.toUpperCase());
+//     return text.toUpperCase()
+// }
+// convertedText("Lorem ")
+
+
+// c дефолтне значення  
+// function addNumbers(a, b, c=50) { // a та б це параметри функції
+
+//     return a + b + c
+// }
+// console.log(addNumbers(20, 30)); // аргументи
+
+
+function a() {
+    console.log(arguments);
+    const b = Array.from(arguments) // Array.from(name) перетворює в нормальний масив 
+    console.log(b);
+    let sum = 1;
+    
+    for (let i = 0; i < arguments.length; i += 1) {
+        sum *= arguments[i]
+    }
+    return sum
 }
-convertedText("Lorem ")
+console.log(a(5, 3, 12, 13, 200));
+console.log(a(2, 3, 4, 5, 6, 7, 88, 99));
+
+
