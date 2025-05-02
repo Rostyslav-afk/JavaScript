@@ -93,7 +93,7 @@
 // const countProps = function (obj) {
 //     const key = Object.keys(obj);
 //     // const value = Object.values(obj);
-   
+
 // };
 // countProps()
 
@@ -106,9 +106,95 @@
 // console.log(copyNames);
 // console.log(namesMassiv);
 
-const number = Math.min(43,23,3,423,3,43);
-console.log(number);
-const masivNumber = [12, 32, 2, 43, 1];
-console.log(Math.min(...masivNumber));
+// const number = Math.min(43,23,3,423,3,43);
+// console.log(number);
+// const masivNumber = [12, 32, 2, 43, 1];
+// console.log(Math.min(...masivNumber));
+
+// const hotel = {
+//     name: "Hilton",
+//     stars: 5,
+//     street: "Shevchenka",
+//     location: {
+//         street: "Center",
+
+//     },
+// }
+// // const {name = "hotel", stars = 0, street = "no info", full = "no info"} = hotel;
+// // console.log(name, stars, street, full);
+// const {name, stars, ...rest} = hotel;
+// console.log(name);
+// console.log(stars);
+// console.log(rest);// ...rest лишаючі елементи перетоворює в окремий обєкт
+
+// let options = {
+//     size: {
+//         width: 100,
+//         height: 200,
+//     },
+//     items: ["Borsh", "Zhyvchyk"],
+//     extra: true,
+// }
+// const {
+//     size: {
+//         width,
+//         height
+//     },
+//     items: [itemFirst, itemSecond], //додамо елменти до items
+//     title = "Menu"
+// } = options;
+
+// console.log(title);
+// console.log(width);
+// console.log(height);
+// console.log(itemFirst);
+// console.log(itemSecond);
+
+// const movie = {
+//     title: 'The Shawshank Redemption',
+//     director: {
+//         name: 'Frank Darabont',
+//         nationality: 'American'
+//     },
+//     actors: ['Tim Robbins', 'Morgan Freeman'],
+//     release_year: 1994,
+//     ratings: {
+//         imdb: 9.3,
+//         rotten_tomatoes: 90
+//     }
+// }
+
+// const { title, director: { name, nationality }, actors: { a, b }, release_year, ratings: { imdb, rotten_tomatoes } } = movie;
+// console.log(title, name, nationality, a, b, release_year, imdb, rotten_tomatoes);
+
+// Напишіть функцію, яка отримує об'єкт з ім'ям, прізвищем та віком та використовує деструктуризацію для повернення рядка, що містить інформацію про цю людину в такому форматі: "Мене звати Ім'я Прізвище і мені Вік років".
+// const person = {
+//     name: 'Nelli',
+//     surname: 'Laroy',
+//     age: 25
+// };
+
+// const personInfo = function({ name, surname, age}){
+//     return `Мене звати ${name} ${surname} та мій вік ${age} років`
+// }
+
+// console.log(personInfo(person));
+// Напишіть функцію, яка приймає об'єкт, що містить інформацію про студента (ім'я, прізвище, оцінки за три предмети) та використовує деструктуризацію для повернення середньої оцінки студента.
+const student = {
+    name: 'Bruce',
+    surname: 'Lee',
+    grades: [4, 5, 3]
+};
+const calculateAverageGrade = function ({ name, surname, grades }) {
+    let sum = 0;
+    for (let i = 0; i < grades.length; i += 1) {
+        sum += grades[i];
+    }
+    return `Імя та прізвище студента: ${name} ${surname}. Середній бал студента ${sum / grades.length}`
+}
+console.log(calculateAverageGrade(student));
+
+
+
 
 
