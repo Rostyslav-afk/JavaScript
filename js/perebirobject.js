@@ -110,3 +110,5 @@ const number = Math.min(43,23,3,423,3,43);
 console.log(number);
 const masivNumber = [12, 32, 2, 43, 1];
 console.log(Math.min(...masivNumber));
+
+
