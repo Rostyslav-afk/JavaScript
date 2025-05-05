@@ -193,6 +193,7 @@ const calculateAverageGrade = function ({ name, surname, grades }) {
     return `Імя та прізвище студента: ${name} ${surname}. Середній бал студента ${sum / grades.length}`
 }
 console.log(calculateAverageGrade(student));
+const lala = document.querySelector("")
 
 
 
