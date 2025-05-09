@@ -30,14 +30,100 @@ const friends = ["Rostyslav", "Vlad", "Mukola", "Vlad Draga", "Lev"]
 // console.log(doubleNumbers);
 
 //Метод map() перебирає масив , не змінює оригінальний масив, повертає новий масив, в якому буде колекція данних!
-const result = friends.map((friend) => friend);
-console.log(result); // Копія
-console.log(friends);
-//filter() Може повертати колекцію данних!
-const num = [1,2,3,4,5,6,7,8,9,10];
-const filterArr = num.filter((item) => item > 5)
-console.log(filterArr);
+// const result = friends.map((friend) => friend);
+// console.log(result); // Копія
+// console.log(friends);
+// //filter() Може повертати колекцію данних!
+// const num = [1,2,3,4,5,6,7,8,9,10];
+// const filterArr = num.filter((item) => item > 5)
+// console.log(filterArr);
 
-const filterArrSecond = num.find((item) => item === 5)
-console.log(filterArrSecond);
+// const filterArrSecond = num.find((item) => item === 5)
+// console.log(filterArrSecond);
+
+// const num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 1230, 140, 123, 31];
+// // const newArray = [];
+// // for (let i = 0; i < num.length; i += 1) {
+// //     if (num[i] > 20) {
+// //         continue;
+// //     }
+// //     // console.log(num[i]);
+// //     newArray.push(num[i])
+// // }
+// // console.log(newArray);
+
+// // num.forEach((item) => console.log(item))
+// const newArray = num.map((number) => {
+//     console.log(number);
+// });
+
+
+const pets = [
+    {
+        id: "1",
+        name: "Барсик",
+        type: "кіт",
+        color: "сірий",
+        age: 2,
+        weight: 4.5,
+        isAdopted: true,
+        favoriteFoods: ["риба", "молоко"],
+    },
+    {
+        id: "2",
+        name: "Бім",
+        type: "пес",
+        color: "чорний",
+        age: 5,
+        weight: 12,
+        isAdopted: false,
+        favoriteFoods: ["кістка", "м’ясо"],
+    },
+    {
+        id: "3",
+        name: "Кузя",
+        type: "хом’як",
+        color: "білий",
+        age: 1,
+        weight: 0.2,
+        isAdopted: true,
+        favoriteFoods: ["зерно", "морква"],
+    },
+    {
+        id: "4",
+        name: "Лола",
+        type: "папуга",
+        color: "зелений",
+        age: 3,
+        weight: 0.3,
+        isAdopted: false,
+        favoriteFoods: ["яблуко", "зерно"],
+    },
+];
+
+// Завдання 1:
+// Отримати масив усіх імен об'єктів (ключ name)
+
+// const getPetNames = (pets) => pets.map((pet) => pet.name);
+
+// console.log(getPetNames(pets));
+
+// Завдання 2:
+// Знайти всіх тварин певного типу (наприклад, "кіт").
+// const getPetsByType = (pets, type) => {
+//     const result = pets.filter((pet) => {
+//         return pet.type === type;
+//     });
+//     return result;
+// }
+
+// console.log(getPetsByType(pets, "кіт"));
+// const getPetsByType = (pets, type) => pets.filter((pet) => pet.type === type)
+
+
+// console.log(getPetsByType(pets, "кіт"));
+
+// Отримати імена всіх тварин, які вже знайдені в родину (isAdopted === true).
+const getAdoptedPetNames = (pets) => pets.filter((pet) => pet.isAdopted);
+console.log(getAdoptedPetNames(pets));
 
