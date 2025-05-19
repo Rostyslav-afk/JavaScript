@@ -175,6 +175,6 @@ const reduceTags = (tweets) => tweets.reduce((acc, value) => {
             acc.push(tag)
         }
     });
-    return acc;
+    return acc;º
 }, []);
 console.log(reduceTags(tweets));
